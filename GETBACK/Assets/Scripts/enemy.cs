@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int maxHealth = 100;
+    private int currentHealth;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
