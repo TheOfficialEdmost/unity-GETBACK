@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 2014088745}
   - component: {fileID: 2014088744}
   m_Layer: 0
-  m_Name: Square
+  m_Name: LovrinSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
