@@ -16,6 +16,12 @@ public class weapon : MonoBehaviour
     public float reloadTime = 2f;
     private bool isReloading = false;
 
+    public Slider mainSlider;
+
+    void Start()
+    {
+        mainSlider.gameObject.SetActive(false); 
+    }
 
     void Update()
     {
@@ -58,6 +64,7 @@ public class weapon : MonoBehaviour
         {
             Reload();
         }
+       
     }
 
 
@@ -79,6 +86,8 @@ public class weapon : MonoBehaviour
     {
         isReloading = true;
         reloadTime -= Time.deltaTime;
+        mainSlider.value += Time.deltaTime;
+        mainSlider.gameObject.SetActive(true);
 
         if (reloadTime <= 0)
         {
@@ -86,7 +95,17 @@ public class weapon : MonoBehaviour
             maxAmmo -= clipSize;
             isReloading = false;
             reloadTime = 1f;
+            mainSlider.value = 0;
+            mainSlider.gameObject.SetActive(false);
+
         }
+    }
+
+    //Invoked when a submit button is clicked.
+    public void SubmitSliderSetting()
+    {
+        //Displays the value of the slider in the console.
+        Debug.Log(mainSlider.value);
     }
 
 }
