@@ -16,6 +16,8 @@ public class playerMovement : MonoBehaviour
     private float dashCounter;
     private float dashCoolCounter;
 
+    public Animator animator;
+
     void Start()
     {
         activeMoveSpeed = moveSpeed;
@@ -31,6 +33,9 @@ public class playerMovement : MonoBehaviour
 
         rb.velocity = moveDirection * activeMoveSpeed;
 
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.y);
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
         // Dash
         if (Input.GetKeyDown(KeyCode.Space))
         {

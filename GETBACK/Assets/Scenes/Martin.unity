@@ -332,6 +332,7 @@ MonoBehaviour:
   dashSpeed: 10
   dashLenght: 0.2
   dashCooldown: 0.5
+  animator: {fileID: 581814605}
 --- !u!95 &581814605
 Animator:
   serializedVersion: 4
