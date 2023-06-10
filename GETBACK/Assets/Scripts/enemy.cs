@@ -6,7 +6,11 @@ public class enemy : MonoBehaviour
 {
     public int maxHealth = 100;
     private int currentHealth;
-    
+
+    public float movementSpeed;
+    private float originalSpeed;
+
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -26,6 +30,8 @@ public class enemy : MonoBehaviour
         // Handle enemy death, such as playing death animation, awarding points, etc.
         Destroy(gameObject);
     }
+
+    
 }
 
 
