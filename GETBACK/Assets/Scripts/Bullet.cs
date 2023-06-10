@@ -5,9 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int damageAmount = 20;
+   
 
-  
-    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,4 +18,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    /*private void SlowEnemy()
+    {
+        Enemy.movementSpeed -= 1;
+        slowDuration -= Time.deltaTime;
+        if (slowDuration < 0)
+        {
+            Enemy.movementSpeed = Enemy.originalSpeed;
+        }
+    }*/
 }

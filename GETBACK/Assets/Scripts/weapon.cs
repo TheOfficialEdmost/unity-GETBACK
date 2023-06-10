@@ -9,6 +9,7 @@ public class weapon : MonoBehaviour
     private bool isFlipped = false;
 
     public GameObject bulletPrefab;
+   
     public Transform spawnPoint;
     public int bulletSpeed;
 
@@ -16,11 +17,19 @@ public class weapon : MonoBehaviour
     public float reloadTime = 2f;
     private bool isReloading = false;
 
+    public float fireDelta = 0.5F;
+
+    private float nextFire = 0.5F;
+    private GameObject newProjectile;
+    private float myTime = 0.0F;
+
     public Slider mainSlider;
+
 
     void Start()
     {
         mainSlider.gameObject.SetActive(false); 
+        
     }
 
     void Update()
@@ -53,10 +62,17 @@ public class weapon : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // Shoot bullet
-        if (Input.GetButtonDown("Fire1") && currentAmmo > 0 && isReloading == false) // Change "Fire1" to the appropriate input for your game
+        myTime = myTime + Time.deltaTime;
+
+        if (Input.GetButton("Fire1") && myTime > nextFire && currentAmmo > 0 && isReloading == false)
         {
+            nextFire = myTime + fireDelta;
             Shoot();
+
+            nextFire = nextFire - myTime;
+            myTime = 0.0F;
             currentAmmo -= 1;
+
         }
 
         // Reload
@@ -64,9 +80,9 @@ public class weapon : MonoBehaviour
         {
             Reload();
         }
-       
     }
 
+      
 
 
     void Shoot()
@@ -101,11 +117,5 @@ public class weapon : MonoBehaviour
         }
     }
 
-    //Invoked when a submit button is clicked.
-    public void SubmitSliderSetting()
-    {
-        //Displays the value of the slider in the console.
-        Debug.Log(mainSlider.value);
-    }
 
 }
