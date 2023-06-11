@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
     public int damageAmount = 20;
    
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         enemy Enemy = collision.gameObject.GetComponent<enemy>();
@@ -16,16 +15,9 @@ public class Bullet : MonoBehaviour
         {
             Enemy.TakeDamage(damageAmount);
             Destroy(gameObject);
+            
         }
     }
 
-    /*private void SlowEnemy()
-    {
-        Enemy.movementSpeed -= 1;
-        slowDuration -= Time.deltaTime;
-        if (slowDuration < 0)
-        {
-            Enemy.movementSpeed = Enemy.originalSpeed;
-        }
-    }*/
+   
 }

@@ -359,6 +359,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 950083444176758060, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 950083444176758060, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 950083444176758060, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950083444176758060, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7134819
       objectReference: {fileID: 0}
@@ -409,6 +421,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
+--- !u!4 &353211981 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6326013158092363506, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
+  m_PrefabInstance: {fileID: 1449650531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &368820229
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +859,10 @@ PrefabInstance:
       propertyPath: mainSlider
       value: 
       objectReference: {fileID: 594482286}
+    - target: {fileID: 2113107403151788158, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6326013158092363504, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
       propertyPath: m_Name
       value: player2
@@ -986,8 +1007,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 146916993}
-  player: {fileID: 0}
-  threshold: 2
+  player: {fileID: 353211981}
+  threshold: 0.2
 --- !u!4 &1731017618
 Transform:
   m_ObjectHideFlags: 0
