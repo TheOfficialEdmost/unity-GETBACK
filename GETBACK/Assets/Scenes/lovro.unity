@@ -339,7 +339,9 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
 --- !u!1001 &207563832
@@ -418,7 +420,9 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
 --- !u!4 &353211981 stripped
@@ -853,12 +857,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2113107402011137677, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
       propertyPath: fireDelta
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2113107402011137677, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
       propertyPath: mainSlider
       value: 
       objectReference: {fileID: 594482286}
+    - target: {fileID: 2113107402011137677, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2113107403151788158, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -974,7 +982,9 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
 --- !u!1 &1731017616

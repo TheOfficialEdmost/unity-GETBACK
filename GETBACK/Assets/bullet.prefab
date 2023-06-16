@@ -147,6 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 50
-  Enemy: {fileID: 13694988945503999, guid: 61bb2232bb411724d8e5c7e20c729691, type: 3}
   slowAmount: 1
   slowDuration: 2
+  enemyObject: {fileID: 0}

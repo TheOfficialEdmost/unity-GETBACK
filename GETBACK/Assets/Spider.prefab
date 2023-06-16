@@ -101,6 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  movementSpeed: 0
+  originalSpeed: 0
+  slowAmount: 1
+  slowDuration: 2
+  bloodSplatter: {fileID: 9125059259187737828, guid: ce6ac3cceee22b949aedf77d4ec955bb, type: 3}
 --- !u!50 &3842930660602841759
 Rigidbody2D:
   serializedVersion: 4
@@ -160,4 +165,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65dd16b607e81c24cb87f79d30c07106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2

@@ -8,13 +8,28 @@ public class enemy : MonoBehaviour
     private int currentHealth;
 
     public float movementSpeed;
-    private float originalSpeed;
+    public float originalSpeed;
 
+    public float slowAmount = 1f;
+    public float slowDuration = 2f;
+
+    public GameObject bloodSplatter;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        originalSpeed = movementSpeed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            ApplySlow(slowAmount);
+            StartCoroutine (ResetSpeed());
+        }
+    }
+
 
     public void TakeDamage(int damageAmount)
     {
@@ -22,8 +37,10 @@ public class enemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            Instantiate(bloodSplatter, transform.position, Quaternion.identity);
         }
     }
+
 
     private void Die()
     {
@@ -31,6 +48,18 @@ public class enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+    public void ApplySlow(float slowAmount)
+    {
+        movementSpeed = originalSpeed - slowAmount;
+    }
+
+
+    private IEnumerator ResetSpeed()
+    {
+        yield return new WaitForSeconds(slowDuration);
+        movementSpeed = originalSpeed;
+    }
 }
 
 
