@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 527b2172406384a4abc1f639eb74c61d
+guid: f4ba81f0101ab814fafc6651d53781cc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charDodgeRoll_0
+      name: eksplozijaKrvi_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86f040b195ae0df4e9f9671a20024628
-      internalID: -1728999067
+      spriteID: 5f9bce769ed9c8d41b6f1a90c8104068
+      internalID: -1602437639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_1
+      name: eksplozijaKrvi_1
       rect:
         serializedVersion: 2
         x: 32
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 854b54d7a2bbcc94a8c105c7c80d8d51
-      internalID: -1066113364
+      spriteID: 44d227487c866f745804ef7fbd85ca30
+      internalID: -84537807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_2
+      name: eksplozijaKrvi_2
       rect:
         serializedVersion: 2
         x: 64
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2735d4428f07e904696d2ee4779ea1c2
-      internalID: 544368667
+      spriteID: 3b79a199d8b526542a0dd1198df604ee
+      internalID: 594456808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_3
+      name: eksplozijaKrvi_3
       rect:
         serializedVersion: 2
         x: 96
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 525d5b5848c83864c9f58f56b52104d8
-      internalID: -1211881150
+      spriteID: eaadbee44adf1e44abad5b63c4b1662d
+      internalID: 9291516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_4
+      name: eksplozijaKrvi_4
       rect:
         serializedVersion: 2
         x: 128
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011b1365f047d91479b452f2c61f3676
-      internalID: 922641176
+      spriteID: 91acedb26185a3747a25a79e398c1bdb
+      internalID: -1919694653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_5
+      name: eksplozijaKrvi_5
       rect:
         serializedVersion: 2
         x: 160
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 528c2eb5ab0ccca4fb27180f6e7a1084
-      internalID: 213867590
+      spriteID: 51fdae88ea5c6a94b83aee046668b8b9
+      internalID: 1759601854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_6
+      name: eksplozijaKrvi_6
       rect:
         serializedVersion: 2
         x: 192
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32eed62be2b14da48b7a8aeaa70a28b9
-      internalID: -1783600269
+      spriteID: 0a33cdca66615354f898a705a6456bfc
+      internalID: -1833103897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charDodgeRoll_7
+      name: eksplozijaKrvi_7
       rect:
         serializedVersion: 2
         x: 224
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e02a8ff8afba29a43a6c8cc07f1af6c7
-      internalID: 500393476
+      spriteID: dfc941b2c9b04fe4781f23f47dddc475
+      internalID: -2116974695
       vertices: []
       indices: 
       edges: []
@@ -285,14 +285,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      charDodgeRoll_4: 922641176
-      charDodgeRoll_3: -1211881150
-      charDodgeRoll_7: 500393476
-      charDodgeRoll_2: 544368667
-      charDodgeRoll_1: -1066113364
-      charDodgeRoll_0: -1728999067
-      charDodgeRoll_5: 213867590
-      charDodgeRoll_6: -1783600269
+      eksplozijaKrvi_3: 9291516
+      eksplozijaKrvi_6: -1833103897
+      eksplozijaKrvi_4: -1919694653
+      eksplozijaKrvi_5: 1759601854
+      eksplozijaKrvi_0: -1602437639
+      eksplozijaKrvi_7: -2116974695
+      eksplozijaKrvi_2: 594456808
+      eksplozijaKrvi_1: -84537807
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
