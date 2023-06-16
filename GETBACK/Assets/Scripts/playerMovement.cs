@@ -36,6 +36,7 @@ public class playerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", moveDirection.x);
         animator.SetFloat("Vertical", moveDirection.y);
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
+        animator.SetFloat("DodgeSpeed", activeMoveSpeed);
         // Dash
         if (Input.GetKeyDown(KeyCode.Space))
         {
