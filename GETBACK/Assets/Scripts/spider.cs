@@ -13,6 +13,7 @@ public class spider : MonoBehaviour
     private bool isOnCooldown = false;
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         cooldownDuration = Random.Range(cooldownDuration - 1f, cooldownDuration + 1f);
     }
     private void Update()
