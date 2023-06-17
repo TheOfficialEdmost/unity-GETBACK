@@ -14,7 +14,7 @@ public class enemy : MonoBehaviour
     public float slowDuration = 2f;
 
     public GameObject bloodSplatter;
-
+    public GameObject bloodExplosion;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -38,6 +38,8 @@ public class enemy : MonoBehaviour
         {
             Die();
             Instantiate(bloodSplatter, transform.position, Quaternion.identity);
+            Instantiate(bloodExplosion, transform.position, Quaternion.identity);
+
         }
     }
 

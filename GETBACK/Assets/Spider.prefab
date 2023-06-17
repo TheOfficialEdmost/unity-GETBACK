@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -1888535321408123804}
   m_Layer: 0
   m_Name: Spider
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   slowAmount: 1
   slowDuration: 2
   bloodSplatter: {fileID: 9125059259187737828, guid: ce6ac3cceee22b949aedf77d4ec955bb, type: 3}
+  bloodExplosion: {fileID: 3011292350371911087, guid: 5def350f2c0f0c442987be24f7592e60, type: 3}
 --- !u!50 &3842930660602841759
 Rigidbody2D:
   serializedVersion: 4
@@ -165,3 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65dd16b607e81c24cb87f79d30c07106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 6326013158092363506, guid: ccad7a1913d918248a84b390693a13f7, type: 3}
+  lungeSpeed: 10
+  lungeDuration: 0.5
+  cooldownDuration: 2
+  maxDistance: 10
