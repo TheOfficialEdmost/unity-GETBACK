@@ -25,15 +25,18 @@ public class weapon : MonoBehaviour
 
     public Slider mainSlider;
 
+    public Text ammoText;
+
 
     void Start()
     {
-        mainSlider.gameObject.SetActive(false); 
-        
+        mainSlider.gameObject.SetActive(false);
+
     }
 
     void Update()
     {
+        ammoText.text = currentAmmo.ToString()+"/"+maxAmmo.ToString();
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 direction = mousePos - transform.position;

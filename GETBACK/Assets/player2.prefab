@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6379023353405895328, guid: 1f1d734ac567bc643b0cbafaa82d33d9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6379023353405895329, guid: 1f1d734ac567bc643b0cbafaa82d33d9, type: 3}
       propertyPath: m_Name
-      value: charIdleAnimation_15
+      value: player2
       objectReference: {fileID: 0}
     - target: {fileID: 6379023353405895329, guid: 1f1d734ac567bc643b0cbafaa82d33d9, type: 3}
       propertyPath: m_TagString
